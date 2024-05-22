@@ -104,9 +104,6 @@ dependencies:
   passport-google-oauth20:
     specifier: ^2.0.0
     version: 2.0.0
-  posthog-js:
-    specifier: ^1.79.1
-    version: 1.79.1
   query-string:
     specifier: ^8.1.0
     version: 8.1.0
@@ -1408,10 +1405,6 @@ packages:
     resolution: {integrity: sha512-bijHueCGd0LqqNK9b5oCMHc0MluJAx0cwqASgbWMvkO01lCYgIhacVRLcaDz3QnyYIRNJRDwMb41VuT6pHJ91Q==}
     dev: false
 
-  /fflate@0.4.8:
-    resolution: {integrity: sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==}
-    dev: false
-
   /file-saver@2.0.5:
     resolution: {integrity: sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==}
     dev: false
@@ -2340,12 +2333,6 @@ packages:
       nanoid: 3.3.2
       picocolors: 1.0.0
       source-map-js: 1.0.2
-    dev: false
-
-  /posthog-js@1.79.1:
-    resolution: {integrity: sha512-ftW9RHoB9gIYjqVcA/YJeu99MfJaX/vfx/ADgO2yi5QfFWsIWNnfPeWYQskMMxEUTq03svRAwdZHTyOkVkDpIA==}
-    dependencies:
-      fflate: 0.4.8
     dev: false
 
   /preact-render-to-string@5.1.21(preact@10.7.1):

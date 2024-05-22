@@ -20,10 +20,13 @@
     "@sendgrid/mail": "^7.7.0",
     "@types/file-saver": "^2.0.5",
     "cloudinary": "^1.41.2",
+    "dayjs": "^1.11.11",
     "easy-localized-translation": "^1.1.0",
     "file-saver": "^2.0.5",
+    "history": "^5.3.0",
     "lerna": "^4.0.0",
-    "liquidjs": "^9.34.1"
+    "liquidjs": "^9.34.1",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",

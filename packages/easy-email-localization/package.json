@@ -1,5 +1,5 @@
 {
-  "name": "easy-email-localization",
+  "name": "@stackframe/easy-email-localization",
   "license": "MIT",
   "description": "Email editor",
   "version": "4.15.0",

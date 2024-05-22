@@ -1,5 +1,5 @@
 {
-  "name": "easy-email-extensions",
+  "name": "@stackframe/easy-email-extensions",
   "license": "MIT",
   "description": "Email editor",
   "version": "4.16.0",

@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  easy-email-core:
+  '@stackframe/easy-email-core':
     specifier: ^4.3.6
-    version: 4.12.2(react-dom@18.2.0)(react@18.2.0)
+    version: 4.16.0(react-dom@18.2.0)(react@18.2.0)
   final-form:
     specifier: ^4.20.4
     version: 4.20.6
@@ -244,6 +244,20 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@stackframe/easy-email-core@4.16.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-+0jZJ2LrwpS3nKj4q5z9SqAWLeNarMbv1/r8PpbNBRIYbKvjRCegF1qZ7lsusZ5pBDz87UoKOkh0456AyIo8Ug==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    dependencies:
+      he: 1.2.0
+      js-beautify: 1.15.1
+      lodash: 4.17.21
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      uuid: 8.3.2
+    dev: false
 
   /@types/eslint-scope@3.7.7:
     resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
@@ -998,20 +1012,6 @@ packages:
 
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
-    dev: false
-
-  /easy-email-core@4.12.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-cfl09YInI4RYuNKhZJykQIMs22QbEYBo+BLtDcbiu2hBzJscPOLZ2mW0MQyhu0LJSiVkie+fmQLqmTXcmCCMfg==}
-    peerDependencies:
-      react: ^18.2.0
-      react-dom: ^18.2.0
-    dependencies:
-      he: 1.2.0
-      js-beautify: 1.15.1
-      lodash: 4.17.21
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      uuid: 8.3.2
     dev: false
 
   /editorconfig@1.0.4:
@@ -2131,7 +2131,7 @@ packages:
   /jsonfile@4.0.0:
     resolution: {integrity: sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==}
     optionalDependencies:
-      graceful-fs: 4.2.8
+      graceful-fs: 4.2.11
     dev: true
 
   /jsx-ast-utils@3.2.1:

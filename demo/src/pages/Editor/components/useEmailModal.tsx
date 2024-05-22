@@ -8,7 +8,6 @@ import email from '@demo/store/email';
 import * as Yup from 'yup';
 import { Form } from 'react-final-form';
 import { useLoading } from '@demo/hooks/useLoading';
-import { pushEvent } from '@demo/utils/pushEvent';
 import mustache from 'mustache';
 import { TextAreaField, TextField } from 'easy-email-extensions';
 
@@ -46,10 +45,6 @@ export function useEmailModal() {
         beautify: true,
         validationLevel: 'soft',
       }).html;
-      pushEvent({
-        event: 'TestEmailSend',
-        payload: { email: values.toEmail, json: emailData.content, html },
-      });
       dispatch(
         email.actions.send({
           data: {

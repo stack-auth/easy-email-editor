@@ -43,7 +43,6 @@ import {
 } from '@/client/hooks';
 import { useRouter } from 'next/router';
 import FullScreenLoading from '@/client/components/FullScreenLoading';
-import { pushEvent } from '@/client/utils/pushEvent';
 import { Liquid } from 'liquidjs';
 import { testMergeTags } from './testMergeTags';
 
@@ -138,9 +137,6 @@ export default function App() {
 
   const onSubmit: Config<IEmailTemplate>['onSubmit'] = async values => {
     try {
-      pushEvent({
-        event: 'Save-Email',
-      });
       await updateEmailTemplateMutation({
         id: template!.id,
         data: {
@@ -208,12 +204,6 @@ export default function App() {
                       target='_blank'
                       onClick={ev => {
                         ev.preventDefault();
-                        pushEvent({
-                          event: 'Donate',
-                          payload: {
-                            user: user.email!,
-                          },
-                        });
                         window.open(
                           'https://www.buymeacoffee.com/easyemail?utm_source=webside&utm_medium=button&utm_content=donate',
                           '_blank',

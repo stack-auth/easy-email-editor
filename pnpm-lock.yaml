@@ -26,9 +26,6 @@ dependencies:
   liquidjs:
     specifier: ^9.34.1
     version: 9.43.0
-  posthog-js:
-    specifier: ^1.76.0
-    version: 1.76.0
 
 devDependencies:
   '@types/fs-extra':
@@ -2380,10 +2377,6 @@ packages:
     dependencies:
       reusify: 1.0.4
 
-  /fflate@0.4.8:
-    resolution: {integrity: sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==}
-    dev: false
-
   /figures@3.2.0:
     resolution: {integrity: sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg==}
     engines: {node: '>=8'}
@@ -4295,12 +4288,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 4.1.0
-    dev: false
-
-  /posthog-js@1.76.0:
-    resolution: {integrity: sha512-C/+M+uVQ+CAEUz0ZAENMobw0fYcXGNomUXd8irelT7cQ9fsDSRgfyF5wwqaX0UXcIBD+iFXTOtK93T8NnFODyg==}
-    dependencies:
-      fflate: 0.4.8
     dev: false
 
   /prelude-ls@1.2.1:

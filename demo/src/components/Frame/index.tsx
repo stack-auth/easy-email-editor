@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Layout, Menu, Breadcrumb } from '@arco-design/web-react';
 import { Stack } from '../Stack';
-import { pushEvent } from '@demo/utils/pushEvent';
 import { githubButtonGenerate } from '@demo/utils/githubButtonGenerate';
 import { useShowCommercialEditor } from '@demo/hooks/useShowCommercialEditor';
 
@@ -42,7 +41,6 @@ export default function Frame({
               <a
                 href='https://www.buymeacoffee.com/easyemail?utm_source=webside&utm_medium=button&utm_content=donate'
                 target='_blank'
-                onClick={() => pushEvent({ event: 'Donate' })}
               >
                 <img
                   src='https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png'
@@ -78,7 +76,6 @@ export default function Frame({
                 data-size='large'
                 data-show-count='true'
                 aria-label='Issue m-Ryan/easy-email on GitHub'
-                onClick={() => pushEvent({ event: 'Issue' })}
                 style={{ opacity: 0 }}
               >
                 Issue

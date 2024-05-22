@@ -8,7 +8,6 @@ import { Link, useHistory } from 'react-router-dom';
 import template from '@demo/store/template';
 import { useDispatch } from 'react-redux';
 import templateList from '@demo/store/templateList';
-import { pushEvent } from '@demo/utils/pushEvent';
 import { getLoadingByKey, useLoading } from '@demo/hooks/useLoading';
 import { Loading } from '@demo/components/loading';
 
@@ -87,12 +86,6 @@ export function CardItem(props: CardItemProps) {
             <div className={styles.listItem}>
               <Link
                 to={`/editor?id=${data.article_id}&userId=${data.user_id}`}
-                onClick={() =>
-                  pushEvent({
-                    event: 'Edit',
-                    payload: { article_id: data.article_id, title: data.title },
-                  })
-                }
               >
                 <IconEdit />
                 &nbsp;Edit

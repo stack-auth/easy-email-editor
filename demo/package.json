@@ -64,7 +64,6 @@
     "liquidjs": "^9.40.0",
     "mjml-browser": "^4.10.4",
     "mustache": "^4.2.0",
-    "posthog-js": "^1.121.4",
     "qs": "^6.10.1",
     "react": "17.0.2",
     "react-color": "^2.19.3",

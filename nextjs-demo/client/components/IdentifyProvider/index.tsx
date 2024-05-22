@@ -17,18 +17,5 @@ export const IdentifyProvider = () => {
     }
   }, [user]);
 
-  useEffect(() => {
-    const userEmail = user?.email;
-    if (userEmail) {
-      import('@/client/utils/posthog')
-        .then(d => d.posthog)
-        .then(posthog => {
-          posthog.identify(userEmail, {
-            email: user?.name,
-          });
-        });
-    }
-  }, [user]);
-
   return <></>;
 };

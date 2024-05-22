@@ -36,7 +36,6 @@ import {
 } from 'easy-email-editor';
 
 import { Stack } from '@demo/components/Stack';
-import { pushEvent } from '@demo/utils/pushEvent';
 import { FormApi } from 'final-form';
 import { UserStorage } from '@demo/utils/user-storage';
 
@@ -216,10 +215,6 @@ export default function Editor() {
       Message.error('Please enter a valid email address');
       return;
     }
-    pushEvent({
-      event: 'TryNewEditor',
-      payload: { email: text },
-    });
     await axios.post(`/api/email`, {
       email: text,
     });
@@ -379,7 +374,6 @@ export default function Editor() {
       dataSource: mergeTags,
     });
 
-    pushEvent({ event: 'MJMLExport', payload: { values, mergeTags } });
     navigator.clipboard.writeText(mjmlString);
     saveAs(new Blob([mjmlString], { type: 'text/mjml' }), 'easy-email.mjml');
   };
@@ -394,7 +388,6 @@ export default function Editor() {
 
     const html = mjml(mjmlString, {}).html;
 
-    pushEvent({ event: 'HTMLExport', payload: { values, mergeTags } });
     navigator.clipboard.writeText(html);
     saveAs(new Blob([html], { type: 'text/html' }), 'easy-email.html');
   };
@@ -448,7 +441,6 @@ export default function Editor() {
       values: IEmailTemplate,
       form: FormApi<IEmailTemplate, Partial<IEmailTemplate>>,
     ) => {
-      pushEvent({ event: 'EmailSave' });
       if (id) {
         const isChanged = !(
           isEqual(initialValues?.content, values.content) &&
@@ -647,7 +639,6 @@ export default function Editor() {
                         target='_blank'
                         onClick={ev => {
                           ev.preventDefault();
-                          pushEvent({ event: 'Donate' });
                           window.open(
                             'https://www.buymeacoffee.com/easyemail?utm_source=webside&utm_medium=button&utm_content=donate',
                             '_blank',
